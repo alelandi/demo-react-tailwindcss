@@ -37,7 +37,7 @@ npm install @craco/craco
 
 Now update our "scripts" section in the `package.json` file:
 
-````json
+````javascript
 {
     // ...
     "scripts": {
@@ -55,7 +55,7 @@ Now update our "scripts" section in the `package.json` file:
 
 Next, create a `craco.config.js` at the root of the project and add the tailwindcss and autoprefixer as PostCSS plugins:
 
-````json
+````javascript
 module.exports = {
   style: {
     postcss: {
@@ -78,7 +78,7 @@ npx tailwindcss init
 
 At the end, this will create a default `tailwind.config.js` file at the root of the project, like this:
 
-````json
+````javascript
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
